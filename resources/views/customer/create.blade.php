@@ -7,7 +7,7 @@
             <div class="form-group">
                 {{Form::label('name',__('Name'),array('class'=>'form-label')) }}
                 <div class="form-icon-user">
-                    {{Form::text('name',null,array('class'=>'form-control','required'=>'required'))}}
+                    {{Form::text('name',null,array('class'=>'form-control','autofocus' =>'','required'=>'required'))}}
                 </div>
             </div>
         </div>
@@ -46,7 +46,9 @@
 
         <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="form-group">
-        <input type="submit" value="{{__('Create')}}" class="btn btn-primary">
+                <div class="form-icon-user">
+                 <input type="submit" value="{{__('Create')}}" class="btn btn-primary">
+                </div>
         </div>
     </div>
 

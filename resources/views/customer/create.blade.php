@@ -31,7 +31,7 @@
             <div class="form-group">
                 {{Form::label('password',__('Password'),['class'=>'form-label'])}}
                 <div class="form-icon-user">
-                    {{Form::password('password',$value = 'password',array('class'=>'form-control','required'=>'required','minlength'=>"6"))}}
+                    {{Form::password('password',array('class'=>'form-control','required'=>'required','minlength'=>"6"))}}
                 </div>
             </div>
         </div>

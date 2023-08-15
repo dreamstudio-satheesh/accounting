@@ -313,20 +313,9 @@ class Utility extends Model
     public static function flagOfCountry()
     {
         $arr = [
-            'ar' => '🇦🇪 ar',
-            'da' => '🇩🇰 da',
-            'de' => '🇩🇪 de',
-            'es' => '🇪🇸 es',
-            'fr' => '🇫🇷 fr',
-            'it' =>  '🇮🇹 it',
-            'ja' => '🇯🇵 ja',
-            'nl' => '🇳🇱 nl',
-            'pl' => '🇵🇱 pl',
-            'ru' => '🇷🇺 ru',
-            'pt' => '🇵🇹 pt',
+            'ta' => 'IN ta',        
             'en' => '🇮🇳 en',
-            'tr' => '🇹🇷 tr',
-            'pt-br' => '🇵🇹 pt-br',
+           
         ];
         return $arr;
     }
@@ -349,22 +338,10 @@ class Utility extends Model
 
     public static function langList(){
         $languages = [
-            "ar" => "Arabic",
-            "zh" => "Chinese",
-            "da" => "Danish",
-            "de" => "German",
+        
+            "ta" => "Tamil",
             "en" => "English",
-            "es" => "Spanish",
-            "fr" => "French",
-            "he" => "Hebrew",
-            "it" => "Italian",
-            "ja" => "Japanese",
-            "nl" => "Dutch",
-            "pl" => "Polish",
-            "pt" => "Portuguese",
-            "ru" => "Russian",
-            "tr" => "Turkish",
-            "pt-br" => "Portuguese(Brazil)"
+    
         ];
         return $languages;
     }

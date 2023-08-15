@@ -40,10 +40,10 @@ class Utility extends Model
         // }
         // $data     = $data->get();
         $settings = [
-            "site_currency" => "USD",
-            "site_currency_symbol" => "$",
+            "site_currency" => "INR",
+            "site_currency_symbol" => "₹",
             "site_currency_symbol_position" => "pre",
-            "site_date_format" => "M j, Y",
+            "site_date_format" => "j M, Y",
             "site_time_format" => "g:i A",
             "company_name" => "",
             "company_address" => "",

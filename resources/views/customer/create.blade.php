@@ -23,7 +23,7 @@
             <div class="form-group">
                 {{Form::label('email',__('Email'),['class'=>'form-label'])}}
                 <div class="form-icon-user">
-                    {{Form::text('email'," rand(100000,999999)",array('class'=>'form-control'))}}
+                    {{Form::text('email', rand(100000,999999),array('class'=>'form-control'))}}
                 </div>
             </div>
         </div>

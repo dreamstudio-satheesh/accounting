@@ -636,13 +636,13 @@
                     </li>
                 @endif
 
-                @if (\Auth::user()->type == 'company')    
+             {{--    @if (\Auth::user()->type == 'company')    
                 <li class="dash-item dash-hasmenu {{ (Request::route()->getName() == 'landingpage.index') ? ' active' : '' }}">
                     <a href="{{ route('landingpage.index') }}" class="dash-link">
                         <span class="dash-micon"><i class="ti ti-license"></i></span><span class="dash-mtext">{{__('Landing Page')}}</span>
                     </a>
                 </li>
-                @endif
+                @endif --}}
 
                 {{-- -------  Company Setting ---------- --}}
                 @if (Gate::check('manage company settings'))

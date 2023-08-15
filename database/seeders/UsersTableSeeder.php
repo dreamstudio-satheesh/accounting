@@ -1374,9 +1374,9 @@ class UsersTableSeeder extends Seeder
 
         $company = User::create(
             [
-                'name' => 'company',
-                'email' => 'company@example.com',
-                'password' => Hash::make('1234'),
+                'name' => 'admin',
+                'email' => 'admin@app.com',
+                'password' => Hash::make('mahesh'),
                 'type' => 'company',
                 'lang' => 'en',
                 'avatar' => '',
@@ -1533,7 +1533,7 @@ class UsersTableSeeder extends Seeder
         $accountant = User::create(
             [
                 'name' => 'accountant',
-                'email' => 'accountant@example.com',
+                'email' => 'accountant@app.com',
                 'password' => Hash::make('1234'),
                 'type' => 'accountant',
                 'lang' => 'en',

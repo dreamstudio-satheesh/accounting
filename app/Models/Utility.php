@@ -43,7 +43,7 @@ class Utility extends Model
             "site_currency" => "INR",
             "site_currency_symbol" => "₹",
             "site_currency_symbol_position" => "pre",
-            "site_date_format" => "j M, Y",
+            "site_date_format" => "d-m-Y",
             "site_time_format" => "g:i A",
             "company_name" => "",
             "company_address" => "",

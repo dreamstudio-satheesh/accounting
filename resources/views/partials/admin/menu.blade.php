@@ -450,14 +450,14 @@
 
 
                 {{-- -------  Email Template ---------- --}}
-                @if (\Auth::user()->type == 'company')
+           {{--      @if (\Auth::user()->type == 'company')
                     <li class="dash-item {{ Request::segment(1) == 'email_template_lang' ? 'active' : '' }}">
                         <a href="{{ route('manage.email.language', [$emailTemplate->id, \Auth::user()->lang]) }}"
                             class="dash-link"><span class="dash-micon"><i
                                     class="ti ti-clipboard-check"></i></span><span
                                 class="dash-mtext">{{ __('Email Template') }}</span></a>
                     </li>
-                @endif
+                @endif --}}
 
 
                 {{-- -------  Goal---------- --}}

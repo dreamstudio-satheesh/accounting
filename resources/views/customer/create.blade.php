@@ -43,6 +43,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="form-group">
+        <input type="submit" value="{{__('Create')}}" class="btn btn-primary">
+        </div>
+    </div>
+
         @if(!$customFields->isEmpty())
         <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="tab-pane fade show" id="tab-2" role="tabpanel">

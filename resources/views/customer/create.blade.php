@@ -46,7 +46,7 @@
 
         <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="form-group">
-                <br>
+                <br><br>
                 <div class="form-icon-user">
                  <input type="submit" value="{{__('Create')}}" class="btn btn-primary">
                 </div>

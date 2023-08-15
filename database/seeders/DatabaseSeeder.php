@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
             $this->call(UsersTableSeeder::class);
             $this->call(NotificationSeeder::class);
             $this->call(AiTemplateSeeder::class);
-            Artisan::call('module:migrate LandingPage');
-            Artisan::call('module:seed LandingPage');
+           // Artisan::call('module:migrate LandingPage');
+           // Artisan::call('module:seed LandingPage');
        /*  } else {
             Utility::languagecreate();
         } */

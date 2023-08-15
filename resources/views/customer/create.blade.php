@@ -114,10 +114,10 @@
 
     </div>
 
-    <div class="col-md-12 text-end">
+  {{--   <div class="col-md-12 text-end">
         <input type="button" id="billing_data" value="Shipping Same As Billing" class="btn btn-primary">
     </div>
-    {{-- <h6 class="sub-title">{{__('Shipping Address')}}</h6>
+    <h6 class="sub-title">{{__('Shipping Address')}}</h6>
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="form-group">

@@ -1,14 +1,14 @@
 {{ Form::open(array('url' => 'productservice')) }}
 <div class="modal-body">
     <div class="row">
-        <div>
+        {{-- <div>
             <a href="#" data-size="md" data-ajax-popup-over="true" data-url="{{ route('generate', ['product & service']) }}"
                 data-bs-toggle="tooltip" data-bs-placement="top" title="{{ __('Generate') }}"
                 data-title="{{ __('Generate content with AI') }}" class="btn btn-primary btn-sm float-end">
                 <i class="fas fa-robot"></i> 
                 {{__('Generate with AI')}}
             </a>
-        </div>
+        </div> --}}
         <div class="col-md-6">
             <div class="form-group">
                 {{ Form::label('name', __('Name'),['class'=>'form-label']) }}<span class="text-danger">*</span>

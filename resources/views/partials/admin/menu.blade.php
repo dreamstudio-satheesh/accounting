@@ -480,13 +480,13 @@
                     </li>
                 @endif
 
-                @if (\Auth::user()->type == 'company')
+               {{--  @if (\Auth::user()->type == 'company')
                     <li class="dash-item {{ Request::segment(1) == 'Notifications' ? 'active' : '' }}">
                         <a href="{{ route('notification-templates.index') }}" class="dash-link"><span
                                 class="dash-micon"><i class="ti ti-bell"></i></span><span
                                 class="dash-mtext">{{ __('Notification Template') }}</span></a>
                     </li>
-                @endif
+                @endif --}}
 
                 {{-- -------  Report ---------- --}}
                 @if (Gate::check('income report') ||

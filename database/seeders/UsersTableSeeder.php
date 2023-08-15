@@ -1569,7 +1569,16 @@ class UsersTableSeeder extends Seeder
             ['name'=>'local_storage_max_upload_size', 'value'=> 2048000, 'created_by'=> 1, 'created_at'=> now(), 'updated_at'=> now()],
             ['name'=>'wasabi_max_upload_size', 'value'=> 2048000, 'created_by'=> 1, 'created_at'=> now(), 'updated_at'=> now()],
             ['name'=>'s3_max_upload_size', 'value'=> 2048000, 'created_by'=> 1, 'created_at'=> now(), 'updated_at'=> now()],
-            ['name'=>'storage_setting', 'value'=> 'local', 'created_by'=> 1, 'created_at'=> now(), 'updated_at'=> now()]
+            ['name'=>'storage_setting', 'value'=> 'local', 'created_by'=> 1, 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'title_text','value' => 'Company Title','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'footer_text','value' => 'Company Footer','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'default_language','value' => 'English','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'cust_theme_bg','value' => 'on','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'display_landing_page','value' => 'off','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'color','value' => 'theme-3','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'cust_darklayout','value' => 'off','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()],
+            ['name' => 'SITE_RTL','value' => 'off','created_by' => '1', 'created_at'=> now(), 'updated_at'=> now()]
+            
 
         ];
 

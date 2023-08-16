@@ -124,7 +124,7 @@
 
     </div>
 
-  {{--   <div class="col-md-12 text-end">
+    <div class="col-md-12 text-end">
         <input type="button" id="billing_data" value="Shipping Same As Billing" class="btn btn-primary">
     </div>
     <h6 class="sub-title">{{__('Shipping Address')}}</h6>
@@ -191,7 +191,7 @@
             </div>
         </div>
 
-    </div> --}}
+    </div>
 
 </div>
 <div class="modal-footer">

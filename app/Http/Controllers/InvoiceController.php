@@ -246,6 +246,21 @@ class InvoiceController extends Controller
                 }
             }
 
+            
+           /*  $invoice            = Invoice::where('id', $id)->first(); */
+            $invoice->send_date = date('Y-m-d');
+            $invoice->status    = 1;
+            $invoice->save();
+
+            $customer         = Customer::where('id', $invoice->customer_id)->first();
+            $invoice->name    = !empty($customer) ? $customer->name : '';
+            $invoice->invoice = \Auth::user()->invoiceNumberFormat($invoice->invoice_id);
+
+            $invoiceId    = Crypt::encrypt($invoice->id);
+            $invoice->url = route('invoice.pdf', $invoiceId);
+
+            Utility::updateUserBalance('customer', $customer->id, $invoice->getTotal(), 'credit');
+
             return redirect()->route('invoice.index', $invoice->id)->with('success', __('Invoice successfully created.'));
         }
         else

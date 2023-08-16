@@ -179,6 +179,10 @@ class InvoiceController extends Controller
             $invoice->due_date       = $request->due_date;
             $invoice->category_id    = $request->category_id;
             $invoice->ref_number     = $request->ref_number;
+            //add  for sent function  by code 
+            $invoice->send_date = date('Y-m-d');
+            $invoice->status    = 1;
+
             $invoice->discount_apply = isset($request->discount_apply) ? 1 : 0;
             $invoice->created_by     = \Auth::user()->creatorId();
 
@@ -247,19 +251,16 @@ class InvoiceController extends Controller
             }
 
             
-            $ainvoice            = Invoice::where('id', $invoice->id)->first();
-            $ainvoice->send_date = date('Y-m-d');
-            $ainvoice->status    = 1;
-            $ainvoice->save();
+            
 
-            $customer         = Customer::where('id', $ainvoice->customer_id)->first();
-            $ainvoice->name    = !empty($customer) ? $customer->name : '';
-            $ainvoice->invoice = \Auth::user()->invoiceNumberFormat($invoice->invoice_id);
+            $customer         = Customer::where('id', $invoice->customer_id)->first();
+            $invoice->name    = !empty($customer) ? $customer->name : '';
+            $invoice->invoice = \Auth::user()->invoiceNumberFormat($invoice->invoice_id);
 
-            $invoiceId    = Crypt::encrypt($ainvoice->id);
-            $ainvoice->url = route('invoice.pdf', $invoiceId);
+            $invoiceId    = Crypt::encrypt($invoice->id);
+            $invoice->url = route('invoice.pdf', $invoiceId);
 
-            Utility::updateUserBalance('customer', $customer->id, $ainvoice->getTotal(), 'credit');
+            Utility::updateUserBalance('customer', $customer->id, $invoice->getTotal(), 'credit');
 
             return redirect()->route('invoice.index', $invoice->id)->with('success', __('Invoice successfully created.'));
         }

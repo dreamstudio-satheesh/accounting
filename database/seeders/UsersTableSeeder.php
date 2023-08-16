@@ -1583,5 +1583,11 @@ class UsersTableSeeder extends Seeder
         ];
 
         DB::table('settings')->insert($data);
+
+        $data = [
+            [ 'customer_id'=>'CUST00001', 'name'=>'Cash Bill', 'email'=> 'cashbill@app.com', 'password'=> 'password', 'created_at'=> now(), 'updated_at'=> now()],
+        ];
+
+        DB::table('customers')->insert($customer);
     }
 }
